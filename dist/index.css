@@ -1,3 +1,124 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline
+;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 .container {
   display: flex;
   width: 500px;
@@ -5,13 +126,17 @@
   flex-direction: column;
   border-radius: 20px;
   box-sizing: border-box;
+  background-color: white;
 }
 body {
+  font-family: 'Red Hat Display', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: no-repeat url('../images//pattern-background-desktop.svg');
+  background-color: hsl(225, 100%, 94%);
 }
 .img-container {
   width: 100%;
@@ -20,4 +145,24 @@ img {
   height: 20vh;
   width: 100%;
   border-radius: 20px;
+}
+.summary-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+.summary-text h1 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.summary-text p {
+  color: gray;
+}
+.summary-text h1,
+.summary-text p {
+  width: 60%;
+  text-align: center;
 }
