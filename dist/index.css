@@ -125,6 +125,7 @@ table {
   border-radius: 20px;
   box-sizing: border-box;
   background-color: white;
+  align-items: center;
 }
 body {
   font-family: 'Red Hat Display', sans-serif;
@@ -142,7 +143,7 @@ body {
 img {
   height: 20vh;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 .summary-text {
   display: flex;
@@ -155,7 +156,7 @@ img {
 }
 .summary-text h1 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .summary-text p {
   color: gray;
@@ -164,4 +165,59 @@ img {
 .summary-text p {
   width: 60%;
   text-align: center;
+}
+.plan-section {
+  border-radius: 10px;
+  height: 100px;
+  width: 75%;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+}
+.plan-section h2 {
+  font-weight: 900;
+}
+.plan-section p {
+  color: gray;
+}
+.plan-section .music-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.plan-section a {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+.plan-section .icon-text {
+  display: flex;
+}
+.button-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+  align-items: center;
+}
+.button-section .proceed-button {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  -webkit-box-shadow: 5px 11px 31px 5px hsl(225, 100%, 98%);
+  box-shadow: 5px 11px 31px 5px hsl(225, 100%, 98%);
+}
+.button-section .cancel-button {
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
 }
