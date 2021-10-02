@@ -222,3 +222,7 @@ img {
   font-size: 16px;
   font-weight: 700;
 }
+.attribution {
+  position: absolute;
+  bottom: 10px;
+}
